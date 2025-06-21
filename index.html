@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1750518828597"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1750518828597">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<a href="#" class="header__logo">Collers</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Products</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Solutions</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Pricing</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Resources</a>
+								</li>
+							</ul>
+							<div class="header__actions">
+								<a class="header__button button button--noborder" href="#">Log In</a>
+								<a class="header__button button button--small" href="#">Sign up now</a>
+							</div>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1750518828597on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="hero">
+					<div class="hero__container">
+						<div class="hero__top">
+							<div class="hero__content">
+								<h1 class="hero__title">Collectible Sneakers</h1>
+								<div class="hero__text">
+									<p>
+										Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
+                            suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum
+                            ultrices amet.
+									</p>
+								</div>
+								<div class="hero__actions">
+									<a href="#" class="hero__button button button--large">Sign up now</a>
+									<a href="#" class="hero__button button button--noborder">
+										<span class="--icon-icon-video"></span>
+										Watch Demo
+									</a>
+								</div>
+							</div>
+							<div class="hero__picture">
+								<!-- <div class="hero__fill"></div> -->
+								<!-- <img class="hero__image " src="@img/hero/hero-image.png" alt="Image"> -->
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/hero/hero-image-full-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/hero/hero-image-full-1200.webp" type="image/webp">
+									<img class="hero__image" alt="Image" src="./assets/img/hero/hero-image-full.webp">
+								</picture>
+							</div>
+						</div>
+						<div class="hero__bottom">
+							<div class="hero__items">
+								<div class="hero__item item-hero">
+									<div class="item-hero__images">
+										<img class="item-hero__icon" src="data:image/svg+xml,%3csvg%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.9876%2010.6667H46.1685C46.1685%2010.6667%2043.8203%2046.019%2032.0781%2046.019C26.342%2046.019%2022.8476%2037.5827%2020.7736%2028.9523C18.602%2019.9159%2017.9876%2010.6667%2017.9876%2010.6667Z'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M46.1685%2010.6667C46.1685%2010.6667%2048.6251%208.04623%2050.6667%207.99999C54.6667%207.90943%2055.4061%2010.6667%2055.4061%2010.6667C56.1891%2012.2921%2056.8152%2016.5181%2053.0579%2020.4191C49.3003%2024.32%2045.0941%2027.7333%2043.3824%2028.9523'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M17.9874%2010.6667C17.9874%2010.6667%2015.4279%208.01637%2013.3332%208.00002C9.3332%207.9688%208.59371%2010.6667%208.59371%2010.6667C7.81088%2012.2921%207.18464%2016.5181%2010.9421%2020.4191C14.6996%2024.32%2019.0619%2027.7333%2020.7734%2028.9525'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M22.6843%2053.3333C22.6843%2048.4571%2032.0779%2046.0189%2032.0779%2046.0189C32.0779%2046.0189%2041.4717%2048.4571%2041.4717%2053.3333H22.6843Z'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+										<img class="item-hero__deco" src="data:image/svg+xml,%3csvg%20width='57'%20height='39'%20viewBox='0%200%2057%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.5'%20d='M3.07107%2017.4975C-3.22858%2011.1978%201.23308%200.426392%2010.1421%200.426392H46.7107C55.6197%200.426392%2060.0814%2011.1978%2053.7817%2017.4975L35.4975%2035.7817C31.5922%2039.687%2025.2606%2039.687%2021.3553%2035.7817L3.07107%2017.4975Z'%20fill='%230369A1'/%3e%3c/svg%3e" alt="Image">
+									</div>
+									<h2 class="item-hero__title">Nibh viverra</h2>
+									<div class="item-hero__text">
+										<p>
+											Sit bibendum donec dolor fames neque vulputate non sit aliquam.
+                                Consequat turpis natoque leo, massa.
+										</p>
+									</div>
+								</div>
+								<div class="hero__item item-hero">
+									<div class="item-hero__images">
+										<img class="item-hero__icon" src="data:image/svg+xml,%3csvg%20width='65'%20height='64'%20viewBox='0%200%2065%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M53.6667%2053.3334L11.0001%2040M53.6667%2053.3334H11.0001V40L53.6667%2053.3334ZM53.6667%2053.3334V32C53.6667%2020.2179%2044.1155%2010.6667%2032.3334%2010.6667C30.2153%2010.6667%2028.1694%2010.9754%2026.2382%2011.5501C17.426%2014.1727%2011.0001%2022.336%2011.0001%2032V40L53.6667%2053.3334Z'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M43.0001%2024V26.6667'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3cpath%20d='M32.3334%2021.3333V24'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3cpath%20d='M21.6667%2018.6667V21.3334'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="Image">
+										<img class="item-hero__deco" src="data:image/svg+xml,%3csvg%20width='39'%20height='39'%20viewBox='0%200%2039%2039'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20opacity='0.5'%20d='M21.9283%203.07106C28.228%20-3.22859%2038.9994%201.23309%2038.9994%2010.1421L38.9994%2029C38.9994%2034.5229%2034.5222%2039%2028.9994%2039L10.1415%2039C1.23247%2039%20-3.22919%2028.2286%203.07046%2021.9289L21.9283%203.07106Z'%20fill='%2315803D'/%3e%3c/svg%3e" alt="Image">
+									</div>
+									<h2 class="item-hero__title">Cursus amet</h2>
+									<div class="item-hero__text">
+										<p>
+											Sit bibendum donec dolor fames neque vulputate non sit aliquam.
+                                Consequat turpis natoque leo, massa.
+										</p>
+									</div>
+								</div>
+								<div class="hero__item item-hero">
+									<div class="item-hero__images">
+										<img class="item-hero__icon" src="data:image/svg+xml,%3csvg%20width='65'%20height='64'%20viewBox='0%200%2065%2064'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6%2053.3334V24C6%2021.0545%208.38781%2018.6667%2011.3333%2018.6667H54C56.9456%2018.6667%2059.3333%2021.0545%2059.3333%2024V53.3334C59.3333%2056.279%2056.9456%2058.6667%2054%2058.6667H11.3333C8.38781%2058.6667%206%2056.279%206%2053.3334Z'%20stroke='%2378350F'%20stroke-width='1.5'/%3e%3cpath%20d='M23.3334%206.66669L32.6667%2016L42%206.66669'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+										<img class="item-hero__deco" src="data:image/svg+xml,%3csvg%20width='45'%20height='45'%20viewBox='0%200%2045%2045'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20opacity='0.5'%20x='0.000732422'%20width='45'%20height='45'%20rx='20'%20fill='%23A21CAF'/%3e%3c/svg%3e" alt="Image">
+									</div>
+									<h2 class="item-hero__title">Ipsum fermentum</h2>
+									<div class="item-hero__text">
+										<p>
+											Sit bibendum donec dolor fames neque vulputate non sit aliquam.
+                                Consequat turpis natoque leo, massa.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="best">
+					<div class="best__container">
+						<img class="best__bg" src="data:image/svg+xml,%3csvg%20width='1358'%20height='527'%20viewBox='0%200%201358%20527'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20opacity='0.75'%20x='1126'%20y='64'%20width='232'%20height='232'%20rx='50'%20fill='%2315803D'/%3e%3crect%20opacity='0.75'%20x='1017'%20y='325'%20width='202'%20height='202'%20rx='30'%20fill='%23A21CAF'/%3e%3crect%20opacity='0.75'%20x='756'%20y='325'%20width='130'%20height='130'%20rx='30'%20fill='%23B45309'/%3e%3crect%20opacity='0.75'%20x='457'%20width='161'%20height='161'%20rx='50'%20fill='%230369A1'/%3e%3crect%20opacity='0.75'%20y='207'%20width='271'%20height='271'%20rx='50'%20fill='%23BE185D'/%3e%3c/svg%3e" alt="Image">
+						<div class="best__body">
+							<div class="best__top">
+								<h2 class="best__title">The best of the best</h2>
+								<a href="#" class="best__button button--white">Sign up now</a>
+							</div>
+							<div class="best__items">
+								<acticle class="best__item item-best">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/best/01-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/best/01-1200.webp" type="image/webp">
+										<img class="item-best__image" alt="Image" src="./assets/img/best/01.webp">
+									</picture>
+									<div class="item-best__content">
+										<h3 class="item-best__title">Title</h3>
+										<div class="item-best__text">
+											<p>
+												Egestas elit dui scelerisque ut eu purus aliquam vitae
+                                    habitasse.
+											</p>
+										</div>
+										<a href="#" class="item-best__button button--white">Buy Now</a>
+									</div>
+								</acticle>
+								<acticle class="best__item item-best">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/best/02-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/best/02-1200.webp" type="image/webp">
+										<img class="item-best__image" alt="Image" src="./assets/img/best/02.webp">
+									</picture>
+									<div class="item-best__content">
+										<h3 class="item-best__title">Title</h3>
+										<div class="item-best__text">
+											<p>
+												Egestas elit dui scelerisque ut eu purus aliquam vitae
+                                    habitasse.
+											</p>
+										</div>
+										<a href="#" class="item-best__button button--white">Buy Now</a>
+									</div>
+								</acticle>
+								<acticle class="best__item item-best">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/best/03-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/best/03-1200.webp" type="image/webp">
+										<img class="item-best__image" alt="Image" src="./assets/img/best/03.webp">
+									</picture>
+									<div class="item-best__content">
+										<h3 class="item-best__title">Title</h3>
+										<div class="item-best__text">
+											<p>
+												Egestas elit dui scelerisque ut eu purus aliquam vitae
+                                    habitasse.
+											</p>
+										</div>
+										<a href="#" class="item-best__button button--white">Buy Now</a>
+									</div>
+								</acticle>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="why">
+					<div class="why__container">
+						<div class="why__body">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/why/why-img-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/why/why-img-1200.webp" type="image/webp">
+								<img class="why__bg" alt="Image" src="./assets/img/why/why-img.webp">
+							</picture>
+							<div class="why__content">
+								<h2 class="why__title">Why join us</h2>
+								<ul class="why__list">
+									<li class="why__item">
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='10'%20viewBox='0%200%2014%2010'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.486%209.72989C5.35474%209.73016%205.22471%209.7045%205.10339%209.6544C4.98206%209.60429%204.87182%209.53071%204.779%209.43789L0.537003%205.19489C0.44143%205.10271%200.365172%204.99242%200.312678%204.87046C0.260185%204.74849%200.232507%204.61729%200.231261%204.48451C0.230014%204.35174%200.255223%204.22004%200.305417%204.09711C0.355611%203.97418%200.429784%203.86248%200.52361%203.76852C0.617435%203.67456%200.729033%203.60023%200.851893%203.54986C0.974752%203.49949%201.10641%203.4741%201.23919%203.47516C1.37197%203.47622%201.50321%203.50371%201.62525%203.55603C1.74729%203.60835%201.85769%203.68445%201.95%203.77989L5.485%207.31489L11.85%200.951894C12.0375%200.764253%2012.2919%200.658785%2012.5571%200.658691C12.8224%200.658598%2013.0769%200.763886%2013.2645%200.951394C13.4521%201.1389%2013.5576%201.39327%2013.5577%201.65854C13.5578%201.92381%2013.4525%202.17825%2013.265%202.36589L6.193%209.43789C6.10018%209.53071%205.98995%209.60429%205.86862%209.6544C5.7473%209.7045%205.61727%209.73016%205.486%209.72989Z'%20fill='%2315803D'/%3e%3c/svg%3e" alt="Image">
+										<a href="#">
+											Est et in pharetra magna adipiscing
+                                ornare aliquam.
+										</a>
+									</li>
+									<li class="why__item">
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='10'%20viewBox='0%200%2014%2010'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.486%209.72989C5.35474%209.73016%205.22471%209.7045%205.10339%209.6544C4.98206%209.60429%204.87182%209.53071%204.779%209.43789L0.537003%205.19489C0.44143%205.10271%200.365172%204.99242%200.312678%204.87046C0.260185%204.74849%200.232507%204.61729%200.231261%204.48451C0.230014%204.35174%200.255223%204.22004%200.305417%204.09711C0.355611%203.97418%200.429784%203.86248%200.52361%203.76852C0.617435%203.67456%200.729033%203.60023%200.851893%203.54986C0.974752%203.49949%201.10641%203.4741%201.23919%203.47516C1.37197%203.47622%201.50321%203.50371%201.62525%203.55603C1.74729%203.60835%201.85769%203.68445%201.95%203.77989L5.485%207.31489L11.85%200.951894C12.0375%200.764253%2012.2919%200.658785%2012.5571%200.658691C12.8224%200.658598%2013.0769%200.763886%2013.2645%200.951394C13.4521%201.1389%2013.5576%201.39327%2013.5577%201.65854C13.5578%201.92381%2013.4525%202.17825%2013.265%202.36589L6.193%209.43789C6.10018%209.53071%205.98995%209.60429%205.86862%209.6544C5.7473%209.7045%205.61727%209.73016%205.486%209.72989Z'%20fill='%2315803D'/%3e%3c/svg%3e" alt="Image">
+										<a href="#">
+											Tellus arcu sed consequat ac velit ut
+                                eu blandit.
+										</a>
+									</li>
+									<li class="why__item">
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='10'%20viewBox='0%200%2014%2010'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.486%209.72989C5.35474%209.73016%205.22471%209.7045%205.10339%209.6544C4.98206%209.60429%204.87182%209.53071%204.779%209.43789L0.537003%205.19489C0.44143%205.10271%200.365172%204.99242%200.312678%204.87046C0.260185%204.74849%200.232507%204.61729%200.231261%204.48451C0.230014%204.35174%200.255223%204.22004%200.305417%204.09711C0.355611%203.97418%200.429784%203.86248%200.52361%203.76852C0.617435%203.67456%200.729033%203.60023%200.851893%203.54986C0.974752%203.49949%201.10641%203.4741%201.23919%203.47516C1.37197%203.47622%201.50321%203.50371%201.62525%203.55603C1.74729%203.60835%201.85769%203.68445%201.95%203.77989L5.485%207.31489L11.85%200.951894C12.0375%200.764253%2012.2919%200.658785%2012.5571%200.658691C12.8224%200.658598%2013.0769%200.763886%2013.2645%200.951394C13.4521%201.1389%2013.5576%201.39327%2013.5577%201.65854C13.5578%201.92381%2013.4525%202.17825%2013.265%202.36589L6.193%209.43789C6.10018%209.53071%205.98995%209.60429%205.86862%209.6544C5.7473%209.7045%205.61727%209.73016%205.486%209.72989Z'%20fill='%2315803D'/%3e%3c/svg%3e" alt="Image">
+										<a href="#">Ullamcorper ornare in et egestas
+                                dolor orci.</a>
+									</li>
+								</ul>
+								<a href="#" class="why__button button--brdbrown">Sign up now</a>
+							</div>
+							<div class="why__images">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/why/video-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/why/video-1200.webp" type="image/webp">
+									<img class="why__image" alt="Image" src="./assets/img/why/video.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="love">
+					<div class="love__container">
+						<div class="love__body">
+							<h2 class="love__title">Because they love us</h2>
+							<div class="love__actions">
+								<div class="swiper-button-prev">
+									<img src="data:image/svg+xml,%3csvg%20width='15'%20height='14'%20viewBox='0%200%2015%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.5%207H1H13.5ZM1%207L7%201L1%207ZM1%207L7%2013L1%207Z'%20fill='%2378350F'/%3e%3cpath%20d='M1%207L7%2013M13.5%207H1H13.5ZM1%207L7%201L1%207Z'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+								</div>
+								<div class="swiper-button-next">
+									<img src="data:image/svg+xml,%3csvg%20width='15'%20height='14'%20viewBox='0%200%2015%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%207H13.5H1ZM13.5%207L7.5%201L13.5%207ZM13.5%207L7.5%2013L13.5%207Z'%20fill='%2378350F'/%3e%3cpath%20d='M13.5%207L7.5%2013M1%207H13.5H1ZM13.5%207L7.5%201L13.5%207Z'%20stroke='%2378350F'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div data-fls-slider="" class="love__slider swiper">
+							<div class="love__wrapper swiper-wrapper">
+								<div class="love__slide swiper-slide">
+									<div class="slide-love">
+										<img class="slide-love__logo" src="./assets/img/love/01.svg" alt="Image">
+										<div class="slide-love__text">
+											<p>
+												Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+											</p>
+										</div>
+										<div class="slide-love__user">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/love/user1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/love/user1-1200.webp" type="image/webp">
+												<img class="slide-love__avatar" alt="Image" src="./assets/img/love/user1.webp">
+											</picture>
+											<div class="slide-love__info">
+												<h3 class="slide-love__name">Hellen Jummy</h3>
+												<div class="slide-love__position">
+													<p>Team Lead</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="love__slide swiper-slide">
+									<div class="slide-love">
+										<img class="slide-love__logo" src="./assets/img/love/02.svg" alt="Image">
+										<div class="slide-love__text">
+											<p>
+												Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+											</p>
+										</div>
+										<div class="slide-love__user">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/love/user2-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/love/user2-1200.webp" type="image/webp">
+												<img class="slide-love__avatar" alt="Image" src="./assets/img/love/user2.webp">
+											</picture>
+											<div class="slide-love__info">
+												<h3 class="slide-love__name">Hellen Jummy</h3>
+												<div class="slide-love__position">
+													<p>Team Lead</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="love__slide swiper-slide">
+									<div class="slide-love">
+										<img class="slide-love__logo" src="./assets/img/love/03.svg" alt="Image">
+										<div class="slide-love__text">
+											<p>
+												Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+											</p>
+										</div>
+										<div class="slide-love__user">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/love/user3-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/love/user3-1200.webp" type="image/webp">
+												<img class="slide-love__avatar" alt="Image" src="./assets/img/love/user3.webp">
+											</picture>
+											<div class="slide-love__info">
+												<h3 class="slide-love__name">Hellen Jummy</h3>
+												<div class="slide-love__position">
+													<p>Team Lead</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="love__slide swiper-slide">
+									<div class="slide-love">
+										<img class="slide-love__logo" src="./assets/img/love/01.svg" alt="Image">
+										<div class="slide-love__text">
+											<p>
+												Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+											</p>
+										</div>
+										<div class="slide-love__user">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/love/user4-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/love/user4-1200.webp" type="image/webp">
+												<img class="slide-love__avatar" alt="Image" src="./assets/img/love/user4.webp">
+											</picture>
+											<div class="slide-love__info">
+												<h3 class="slide-love__name">Hellen Jummy</h3>
+												<div class="slide-love__position">
+													<p>Team Lead</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="love__slide swiper-slide">
+									<div class="slide-love">
+										<img class="slide-love__logo" src="./assets/img/love/02.svg" alt="Image">
+										<div class="slide-love__text">
+											<p>
+												Non risus viverra enim, quis. Eget vitae arcu vivamus sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+											</p>
+										</div>
+										<div class="slide-love__user">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/love/user1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/love/user1-1200.webp" type="image/webp">
+												<img class="slide-love__avatar" alt="Image" src="./assets/img/love/user1.webp">
+											</picture>
+											<div class="slide-love__info">
+												<h3 class="slide-love__name">Hellen Jummy</h3>
+												<div class="slide-love__position">
+													<p>Team Lead</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="collection">
+					<div class="collection__container">
+						<div class="collection__top">
+							<h2 class="collection__title">Grow your collection</h2>
+							<div class="collection__text">
+								<p>
+									Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh amet dictum pellentesque sed.
+                        Eu non turpis risus odio sapien, fames sit rhoncus.
+                        Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam
+                        tellus.
+								</p>
+							</div>
+						</div>
+						<div class="collection__bottom">
+							<div data-fls-tabs="" class="collection-tab">
+								<nav data-fls-tabs-titles="" class="collection-tab__navigation">
+									<button type="button" class="collection-tab__title --tab-active">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='19'%20height='19'%20viewBox='0%200%2019%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.5%2014.5C9.28793%2014.5%2010.0681%2014.3448%2010.7961%2014.0433C11.5241%2013.7418%2012.1855%2013.2998%2012.7426%2012.7427C13.2998%2012.1855%2013.7417%2011.5241%2014.0433%2010.7961C14.3448%2010.0682%2014.5%209.28795%2014.5%208.50002C14.5%207.71208%2014.3448%206.93187%2014.0433%206.20391C13.7417%205.47596%2013.2998%204.81453%2012.7426%204.25737C12.1855%203.70022%2011.5241%203.25827%2010.7961%202.95674C10.0681%202.65521%209.28793%202.50002%208.5%202.50002C6.9087%202.50002%205.38258%203.13216%204.25736%204.25737C3.13214%205.38259%202.5%206.90872%202.5%208.50002C2.5%2010.0913%203.13214%2011.6174%204.25736%2012.7427C5.38258%2013.8679%206.9087%2014.5%208.5%2014.5ZM14.82%2013.406L18.4%2016.986C18.4954%2017.0783%2018.5715%2017.1887%2018.6239%2017.3108C18.6762%2017.4328%2018.7037%2017.564%2018.7047%2017.6968C18.7058%2017.8296%2018.6804%2017.9613%2018.63%2018.0841C18.5797%2018.207%2018.5053%2018.3186%2018.4114%2018.4124C18.3174%2018.5062%2018.2057%2018.5804%2018.0828%2018.6306C17.9599%2018.6808%2017.8282%2018.706%2017.6954%2018.7048C17.5626%2018.7035%2017.4314%2018.6758%2017.3094%2018.6233C17.1875%2018.5708%2017.0772%2018.4946%2016.985%2018.399L13.405%2014.819C11.7975%2016.0669%209.77479%2016.6552%207.74875%2016.4642C5.72271%2016.2732%203.8456%2015.3173%202.49955%2013.7911C1.1535%2012.2648%200.439684%2010.283%200.503425%208.24894C0.567167%206.21492%201.40367%204.28164%202.84265%202.84266C4.28162%201.40368%206.2149%200.567182%208.24892%200.503441C10.2829%200.4397%2012.2648%201.15351%2013.7911%202.49957C15.3173%203.84562%2016.2732%205.72273%2016.4642%207.74877C16.6552%209.77481%2016.0668%2011.7975%2014.819%2013.405L14.82%2013.406Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Bibendum tellus</p>
+									</button>
+									<button type="button" class="collection-tab__title">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='16'%20height='20'%20viewBox='0%200%2016%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%204.386V8C2.00014%209.28542%202.27502%2010.556%202.80622%2011.7265C3.33741%2012.897%204.11266%2013.9405%205.08%2014.787L8%2017.342L10.92%2014.787C11.8874%2013.9405%2012.6627%2012.8971%2013.1939%2011.7265C13.7251%2010.556%2013.9999%209.28543%2014%208V4.386L8%202.136L2%204.386ZM0.649%202.756L8%200L15.351%202.757C15.5416%202.82844%2015.7058%202.95632%2015.8218%203.12357C15.9377%203.29082%2015.9999%203.48948%2016%203.693V8C16%2011.177%2014.628%2014.2%2012.237%2016.293L8%2020L3.763%2016.293C2.58096%2015.2587%201.63369%2013.9837%200.98469%2012.5534C0.335689%2011.1231%20-4.31722e-05%209.57064%204.16394e-09%208V3.693C7.64239e-05%203.48948%200.062251%203.29082%200.178219%203.12357C0.294187%202.95632%200.458426%202.82844%200.649%202.757V2.756ZM6.939%2010.268L10.475%206.732C10.6636%206.54984%2010.9162%206.44905%2011.1784%206.45133C11.4406%206.4536%2011.6914%206.55877%2011.8768%206.74418C12.0622%206.92959%2012.1674%207.1804%2012.1697%207.4426C12.172%207.7048%2012.0712%207.9574%2011.889%208.146L7.646%2012.39C7.45847%2012.5775%207.20416%2012.6828%206.939%2012.6828C6.67384%2012.6828%206.41953%2012.5775%206.232%2012.39L4.111%2010.269C3.92884%2010.0804%203.82805%209.8278%203.83033%209.5656C3.8326%209.3034%203.93777%209.05259%204.12318%208.86718C4.30859%208.68177%204.5594%208.5766%204.8216%208.57433C5.0838%208.57205%205.3364%208.67284%205.525%208.855L6.939%2010.269V10.268Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Cras eget</p>
+									</button>
+									<button type="button" class="collection-tab__title">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='19'%20height='19'%20viewBox='0%200%2019%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.308%2013.471L10.384%2012.407L11.311%2011.878C12.2011%2011.3622%2013.0188%2010.7307%2013.743%209.99998C16.383%207.35898%2017.189%204.25398%2016.218%203.28198C15.246%202.31198%2012.141%203.11598%209.5%205.75698C8.74%206.51698%208.103%207.34698%207.622%208.18898L7.092%209.11598L6.029%209.19198C5.15666%209.25316%204.32887%209.60044%203.674%2010.18C4.92395%2010.73%206.06038%2011.5083%207.025%2012.475C8.005%2013.455%208.777%2014.592%209.32%2015.826C9.89953%2015.1711%2010.2468%2014.3433%2010.308%2013.471ZM7.335%2016.3C7.13389%2016.5734%206.91225%2016.8312%206.672%2017.071C5.5%2018.243%203.732%2018.596%201.368%2018.131C0.903997%2015.768%201.258%2014%202.428%2012.828C2.676%2012.582%202.934%2012.36%203.2%2012.165C2.3802%2011.7645%201.50413%2011.4914%200.601997%2011.355C0.892435%2010.4433%201.3976%209.61473%202.075%208.93898C3.0934%207.91804%204.44656%207.2997%205.885%207.19798C6.48878%206.15316%207.22858%205.19311%208.085%204.34298C11.405%201.02298%2015.679%20-0.0840244%2017.632%201.86798C19.584%203.82098%2018.476%208.09497%2015.157%2011.414C14.3069%2012.2704%2013.3468%2013.0102%2012.302%2013.614C12.2003%2015.0524%2011.5819%2016.4056%2010.561%2017.424C9.88582%2018.1023%209.05708%2018.6079%208.145%2018.898C8.00862%2017.9958%207.73548%2017.1198%207.335%2016.3ZM5.61%2013.89C5.44897%2013.7286%205.26742%2013.589%205.07%2013.475C4.638%2013.625%204.13%2013.955%203.665%2014.419C3.446%2014.639%203.178%2015.378%203.175%2016.324C4.121%2016.321%204.863%2016.05%205.08%2015.834C5.545%2015.368%205.875%2014.861%206.024%2014.429C5.91025%2014.2316%205.77106%2014.0501%205.61%2013.889V13.89ZM13.388%206.10998C13.2903%206.01825%2013.2121%205.90783%2013.1579%205.78527C13.1037%205.66271%2013.0747%205.53052%2013.0727%205.39654C13.0706%205.26256%2013.0955%205.12953%2013.1458%205.00535C13.1961%204.88117%2013.2709%204.76837%2013.3657%204.67365C13.4605%204.57894%2013.5733%204.50424%2013.6975%204.45399C13.8218%204.40374%2013.9548%204.37897%2014.0888%204.38114C14.2228%204.38332%2014.3549%204.4124%2014.4775%204.46665C14.6%204.52091%2014.7103%204.59923%2014.802%204.69698C14.9744%204.88714%2015.0671%205.13633%2015.0609%205.39295C15.0547%205.64957%2014.95%205.89397%2014.7685%206.07555C14.5871%206.25712%2014.3428%206.36197%2014.0862%206.36838C13.8295%206.37479%2013.5803%206.28227%2013.39%206.10998H13.388Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Dolor pharetra</p>
+									</button>
+									<button type="button" class="collection-tab__title">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='20'%20height='18'%20viewBox='0%200%2020%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3%202C2.73478%202%202.48043%202.10536%202.29289%202.29289C2.10536%202.48043%202%202.73478%202%203V12C2%2012.2652%202.10536%2012.5196%202.29289%2012.7071C2.48043%2012.8946%202.73478%2013%203%2013H17C17.2652%2013%2017.5196%2012.8946%2017.7071%2012.7071C17.8946%2012.5196%2018%2012.2652%2018%2012V3C18%202.73478%2017.8946%202.48043%2017.7071%202.29289C17.5196%202.10536%2017.2652%202%2017%202H3ZM3%200H17C17.7956%200%2018.5587%200.31607%2019.1213%200.87868C19.6839%201.44129%2020%202.20435%2020%203V12C20%2012.7956%2019.6839%2013.5587%2019.1213%2014.1213C18.5587%2014.6839%2017.7956%2015%2017%2015H3C2.20435%2015%201.44129%2014.6839%200.87868%2014.1213C0.31607%2013.5587%200%2012.7956%200%2012L0%203C0%202.20435%200.31607%201.44129%200.87868%200.87868C1.44129%200.31607%202.20435%200%203%200V0ZM7%2016H13C13.2652%2016%2013.5196%2016.1054%2013.7071%2016.2929C13.8946%2016.4804%2014%2016.7348%2014%2017C14%2017.2652%2013.8946%2017.5196%2013.7071%2017.7071C13.5196%2017.8946%2013.2652%2018%2013%2018H7C6.73478%2018%206.48043%2017.8946%206.29289%2017.7071C6.10536%2017.5196%206%2017.2652%206%2017C6%2016.7348%206.10536%2016.4804%206.29289%2016.2929C6.48043%2016.1054%206.73478%2016%207%2016Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Amet, fringilla</p>
+									</button>
+									<button type="button" class="collection-tab__title">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%2019.8C3.436%2018.873%200%2014.838%200%2010C0%204.477%204.477%200%2010%200C15.523%200%2020%204.477%2020%2010C20%2014.838%2016.564%2018.873%2012%2019.8V17.748C13.8853%2017.2612%2015.5284%2016.1035%2016.6212%2014.492C17.714%2012.8804%2018.1816%2010.9256%2017.9362%208.994C17.6909%207.06237%2016.7495%205.28653%2015.2885%203.99936C13.8275%202.71218%2011.9471%202.00203%2010%202.00203C8.05285%202.00203%206.17255%202.71218%204.71153%203.99936C3.25052%205.28653%202.30911%207.06237%202.06376%208.994C1.81841%2010.9256%202.28597%2012.8804%203.3788%2014.492C4.47162%2016.1035%206.11468%2017.2612%208%2017.748V19.8ZM8%2015.659C6.66557%2015.1872%205.54089%2014.2589%204.82474%2013.038C4.10858%2011.8172%203.84707%2010.3825%204.08641%208.98753C4.32575%207.59254%205.05054%206.32707%206.13268%205.41479C7.21482%204.50251%208.58463%204.00215%2010%204.00215C11.4154%204.00215%2012.7852%204.50251%2013.8673%205.41479C14.9495%206.32707%2015.6742%207.59254%2015.9136%208.98753C16.1529%2010.3825%2015.8914%2011.8172%2015.1753%2013.038C14.4591%2014.2589%2013.3344%2015.1872%2012%2015.659V13.465C12.7626%2013.0247%2013.3586%2012.3451%2013.6955%2011.5316C14.0325%2010.7181%2014.0916%209.81616%2013.8637%208.96562C13.6358%208.11509%2013.1336%207.36352%2012.435%206.82749C11.7365%206.29145%2010.8805%206.0009%2010%206.0009C9.11946%206.0009%208.26353%206.29145%207.56495%206.82749C6.86638%207.36352%206.3642%208.11509%206.1363%208.96562C5.9084%209.81616%205.96751%2010.7181%206.30448%2011.5316C6.64145%2012.3451%207.23743%2013.0247%208%2013.465V15.659ZM11%2011.732V20H9V11.732C8.61872%2011.5119%208.32072%2011.1721%208.15224%2010.7653C7.98376%2010.3586%207.9542%209.90758%208.06815%209.48231C8.1821%209.05704%208.43319%208.68126%208.78248%208.41324C9.13177%208.14522%209.55973%207.99995%2010%207.99995C10.4403%207.99995%2010.8682%208.14522%2011.2175%208.41324C11.5668%208.68126%2011.8179%209.05704%2011.9319%209.48231C12.0458%209.90758%2012.0162%2010.3586%2011.8478%2010.7653C11.6793%2011.1721%2011.3813%2011.5119%2011%2011.732Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Amet nibh</p>
+									</button>
+									<button type="button" class="collection-tab__title">
+										<img class="collection-tab__icon" src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9%2012V1C9%200.734784%209.10536%200.48043%209.29289%200.292893C9.48043%200.105357%209.73478%200%2010%200C10.2652%200%2010.5196%200.105357%2010.7071%200.292893C10.8946%200.48043%2011%200.734784%2011%201V12H12C12.2652%2012%2012.5196%2012.1054%2012.7071%2012.2929C12.8946%2012.4804%2013%2012.7348%2013%2013C13%2013.2652%2012.8946%2013.5196%2012.7071%2013.7071C12.5196%2013.8946%2012.2652%2014%2012%2014H11V15C11%2015.2652%2010.8946%2015.5196%2010.7071%2015.7071C10.5196%2015.8946%2010.2652%2016%2010%2016C9.73478%2016%209.48043%2015.8946%209.29289%2015.7071C9.10536%2015.5196%209%2015.2652%209%2015V14H8C7.73478%2014%207.48043%2013.8946%207.29289%2013.7071C7.10536%2013.5196%207%2013.2652%207%2013C7%2012.7348%207.10536%2012.4804%207.29289%2012.2929C7.48043%2012.1054%207.73478%2012%208%2012H9ZM16%202V1C16%200.734784%2016.1054%200.48043%2016.2929%200.292893C16.4804%200.105357%2016.7348%200%2017%200C17.2652%200%2017.5196%200.105357%2017.7071%200.292893C17.8946%200.48043%2018%200.734784%2018%201V2H19C19.2652%202%2019.5196%202.10536%2019.7071%202.29289C19.8946%202.48043%2020%202.73478%2020%203C20%203.26522%2019.8946%203.51957%2019.7071%203.70711C19.5196%203.89464%2019.2652%204%2019%204H18V15C18%2015.2652%2017.8946%2015.5196%2017.7071%2015.7071C17.5196%2015.8946%2017.2652%2016%2017%2016C16.7348%2016%2016.4804%2015.8946%2016.2929%2015.7071C16.1054%2015.5196%2016%2015.2652%2016%2015V4H15C14.7348%204%2014.4804%203.89464%2014.2929%203.70711C14.1054%203.51957%2014%203.26522%2014%203C14%202.73478%2014.1054%202.48043%2014.2929%202.29289C14.4804%202.10536%2014.7348%202%2015%202H16ZM4%205H5C5.26522%205%205.51957%205.10536%205.70711%205.29289C5.89464%205.48043%206%205.73478%206%206C6%206.26522%205.89464%206.51957%205.70711%206.70711C5.51957%206.89464%205.26522%207%205%207H4V15C4%2015.2652%203.89464%2015.5196%203.70711%2015.7071C3.51957%2015.8946%203.26522%2016%203%2016C2.73478%2016%202.48043%2015.8946%202.29289%2015.7071C2.10536%2015.5196%202%2015.2652%202%2015V7H1C0.734784%207%200.48043%206.89464%200.292893%206.70711C0.105357%206.51957%200%206.26522%200%206C0%205.73478%200.105357%205.48043%200.292893%205.29289C0.48043%205.10536%200.734784%205%201%205H2V1C2%200.734784%202.10536%200.48043%202.29289%200.292893C2.48043%200.105357%202.73478%200%203%200C3.26522%200%203.51957%200.105357%203.70711%200.292893C3.89464%200.48043%204%200.734784%204%201V5Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+										<p>Sed velit</p>
+									</button>
+								</nav>
+								<div data-fls-tabs-body="" class="collection-tab__content">
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collection/tab-image-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collection/tab-image-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/collection/tab-image.webp">
+										</picture>
+									</div>
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/best/01-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/best/01-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/best/01.webp">
+										</picture>
+									</div>
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/best/03-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/best/03-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/best/03.webp">
+										</picture>
+									</div>
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collection/tab-image-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collection/tab-image-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/collection/tab-image.webp">
+										</picture>
+									</div>
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collection/tab-image-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collection/tab-image-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/collection/tab-image.webp">
+										</picture>
+									</div>
+									<div class="collection-tab__body">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collection/tab-image-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collection/tab-image-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/collection/tab-image.webp">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img class="collection__bg" src="data:image/svg+xml,%3csvg%20width='1440'%20height='684'%20viewBox='0%200%201440%20684'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M208%20507.373C108.284%20488.351%2037%20531.837%200%20602.413V684H1440V3.58104C1397.38%20-12.5779%201346.49%2029.8525%201326.38%2053.0877C1292.55%2094.2772%201203.11%20173.171%201115.99%20159.23C1028.87%20145.289%20954.268%20224.975%20927.858%20266.56C891.557%20322.272%20785.577%20419.199%20652.063%20361.217C528%20307.339%20441.5%20391.416%20395.823%20433.695C358.736%20466.699%20313.484%20527.496%20208%20507.373Z'%20fill='%23FDE68A'/%3e%3cpath%20d='M208%20538.361C108.284%20522.675%2037%20558.532%200%20616.727V684H1440V122.953C1397.38%20109.629%201346.49%20144.615%201326.38%20163.774C1292.55%20197.737%201203.11%20262.79%201115.99%20251.295C1028.87%20239.8%20954.268%20305.505%20927.858%20339.795C891.557%20385.733%20785.577%20465.655%20652.063%20417.845C528%20373.42%20441.5%20442.747%20395.823%20477.608C358.736%20504.822%20313.484%20554.953%20208%20538.361Z'%20fill='%23FEF3C7'/%3e%3cpath%20d='M208%20587.94C108.284%20577.594%2037%20601.245%200%20639.628V684H1440V313.948C1397.38%20305.159%201346.49%20328.236%201326.38%20340.872C1292.55%20363.274%201203.11%20406.181%201115.99%20398.599C1028.87%20391.017%20954.268%20434.355%20927.858%20456.971C891.557%20487.271%20785.577%20539.985%20652.063%20508.451C528%20479.149%20441.5%20524.876%20395.823%20547.869C358.736%20565.819%20313.484%20598.884%20208%20587.94Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+					</div>
+				</section>
+				<section class="map">
+					<div class="map__container">
+						<div class="map__body">
+							<img class="map__bg" src="./assets/img/map/map.svg" alt="Image">
+							<acticle class="shoes">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/map/shoes-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/map/shoes-1200.webp" type="image/webp">
+									<img class="shoes__image" alt="Image" src="./assets/img/map/shoes.webp">
+								</picture>
+								<div class="shoes__text">
+									<p>Emma Simpson collected one pair of Cool Shoes.</p>
+								</div>
+								<img src="data:image/svg+xml,%3csvg%20width='12'%20height='6'%20viewBox='0%200%2012%206'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6%206L12%200H0L6%206Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+							</acticle>
+						</div>
+					</div>
+				</section>
+				<section class="collectors">
+					<div class="collectors__container">
+						<div class="collectors__body">
+							<div class="collectors__top header-actions">
+								<h2 class="collectors__title">Articles by Collectors</h2>
+								<a href="#" class="collectors__button article-button">
+									More Articles
+									<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+								</a>
+							</div>
+							<div class="collectors__bottom">
+								<div class="collectors__items">
+									<acticle class="collectors__item item-collectors">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collectors/01-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collectors/01-1200.webp" type="image/webp">
+											<img class="item-collectors__image" alt="Image" src="./assets/img/collectors/01.webp">
+										</picture>
+										<h3 class="item-collectors__title">Congue velit risus</h3>
+										<div class="item-collectors__text">
+											<p>Nunc gravida semper tellus neque scelerisque eget tincidunt in.</p>
+										</div>
+										<a href="#" class="item-collectors__button article-button">
+											Read article
+											<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+										</a>
+									</acticle>
+									<acticle class="collectors__item item-collectors">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collectors/02-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collectors/02-1200.webp" type="image/webp">
+											<img class="item-collectors__image" alt="Image" src="./assets/img/collectors/02.webp">
+										</picture>
+										<h3 class="item-collectors__title">Ut mauris</h3>
+										<div class="item-collectors__text">
+											<p>Phasellus venenatis massa bibendum posuere dictum tristique.</p>
+										</div>
+										<a href="#" class="item-collectors__button article-button">
+											Read article
+											<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+										</a>
+									</acticle>
+									<acticle class="collectors__item item-collectors">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collectors/03-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collectors/03-1200.webp" type="image/webp">
+											<img class="item-collectors__image" alt="Image" src="./assets/img/collectors/03.webp">
+										</picture>
+										<h3 class="item-collectors__title">Aliquam tortor nunc</h3>
+										<div class="item-collectors__text">
+											<p>Leo mollis fermentum praesent in condimentum id velit purus in.</p>
+										</div>
+										<a href="#" class="item-collectors__button article-button">
+											Read article
+											<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+										</a>
+									</acticle>
+									<acticle class="collectors__item item-collectors">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/collectors/04-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/collectors/04-1200.webp" type="image/webp">
+											<img class="item-collectors__image" alt="Image" src="./assets/img/collectors/04.webp">
+										</picture>
+										<h3 class="item-collectors__title">Fusce non morbi</h3>
+										<div class="item-collectors__text">
+											<p>In sed bibendum metus pretium cursus tellus pharetra.</p>
+										</div>
+										<a href="#" class="item-collectors__button article-button">
+											Read article
+											<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+										</a>
+									</acticle>
+								</div>
+								<img class="collectors__bg" src="data:image/svg+xml,%3csvg%20width='1440'%20height='327'%20viewBox='0%200%201440%20327'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%20235.085V327H1440V0L1386%2031L1044%2015L722%2094L394%2066L49%20163L0%20235.085Z'%20fill='%23FEF3C7'/%3e%3c/svg%3e" alt="Image">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="amazing">
+					<div class="amazing__container">
+						<div class="amazing__top header-actions">
+							<h2 class="amazing__title">Amazing events</h2>
+							<a href="#" class="amazing__button article-button">
+								Explore Articles
+								<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+							</a>
+						</div>
+						<div class="amazing__bottom">
+							<div class="amazing__items">
+								<acticle class="amazing__item item-amazing">
+									<label class="item-amazing__label">Ipsum</label>
+									<h3 class="item-amazing__title">Varius est diam</h3>
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/amazing/01-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/amazing/01-1200.webp" type="image/webp">
+										<img class="item-amazing__image" alt="Image" src="./assets/img/amazing/01.webp">
+									</picture>
+									<a href="#" class="item-amazing__button article-button">
+										Buy Tickets
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+									</a>
+								</acticle>
+								<acticle class="amazing__item item-amazing">
+									<label class="item-amazing__label">Purus</label>
+									<h3 class="item-amazing__title">Diam felis tempus</h3>
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/amazing/02-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/amazing/02-1200.webp" type="image/webp">
+										<img class="item-amazing__image" alt="Image" src="./assets/img/amazing/02.webp">
+									</picture>
+									<a href="#" class="item-amazing__button article-button">
+										Buy Tickets
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+									</a>
+								</acticle>
+								<acticle class="amazing__item item-amazing">
+									<label class="item-amazing__label">Urna</label>
+									<h3 class="item-amazing__title">Vel nulla varius</h3>
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/amazing/03-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/amazing/03-1200.webp" type="image/webp">
+										<img class="item-amazing__image" alt="Image" src="./assets/img/amazing/03.webp">
+									</picture>
+									<a href="#" class="item-amazing__button article-button">
+										Buy Tickets
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+									</a>
+								</acticle>
+								<acticle class="amazing__item item-amazing">
+									<label class="item-amazing__label">Vitae</label>
+									<h3 class="item-amazing__title">Amet tristique a</h3>
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/amazing/04-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/amazing/04-1200.webp" type="image/webp">
+										<img class="item-amazing__image" alt="Image" src="./assets/img/amazing/04.webp">
+									</picture>
+									<a href="#" class="item-amazing__button article-button">
+										Buy Tickets
+										<img src="data:image/svg+xml,%3csvg%20width='14'%20height='14'%20viewBox='0%200%2014%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.586%205.65692L6.636%201.70692C6.45384%201.51832%206.35305%201.26571%206.35533%201.00352C6.3576%200.741321%206.46277%200.490508%206.64818%200.3051C6.83359%200.119692%207.0844%200.0145233%207.3466%200.0122448C7.6088%200.00996641%207.8614%200.110761%208.05%200.292919L13.707%205.94992C13.8002%206.04257%2013.8741%206.15273%2013.9246%206.27407C13.9751%206.3954%2014.001%206.52551%2014.001%206.65692C14.001%206.78833%2013.9751%206.91844%2013.9246%207.03977C13.8741%207.16111%2013.8002%207.27127%2013.707%207.36392L8.05%2013.0209C7.95775%2013.1164%207.84741%2013.1926%207.7254%2013.245C7.6034%2013.2974%207.47218%2013.325%207.3394%2013.3262C7.20662%2013.3273%207.07494%2013.302%206.95205%2013.2517C6.82915%2013.2015%206.7175%2013.1272%206.62361%2013.0333C6.52971%2012.9394%206.45546%2012.8278%206.40518%2012.7049C6.3549%2012.582%206.3296%2012.4503%206.33075%2012.3175C6.3319%2012.1847%206.35949%2012.0535%206.4119%2011.9315C6.46431%2011.8095%206.54049%2011.6992%206.636%2011.6069L10.586%207.65692H1C0.734784%207.65692%200.48043%207.55156%200.292893%207.36403C0.105357%207.17649%200%206.92214%200%206.65692C0%206.3917%200.105357%206.13735%200.292893%205.94981C0.48043%205.76228%200.734784%205.65692%201%205.65692H10.586Z'%20fill='%2378350F'/%3e%3c/svg%3e" alt="Image">
+									</a>
+								</acticle>
+							</div>
+						</div>
+						<img class="amazing__bg" src="data:image/svg+xml,%3csvg%20width='1440'%20height='354'%20viewBox='0%200%201440%20354'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%20262.085V354H1440V1.50862C1247.33%20-9.19998%201103.46%2038.9887%20990.86%2086.285C878.262%20133.581%20739.392%20152.321%20490.426%20154.106C291.253%20155.534%2080.4865%20226.687%200%20262.085Z'%20fill='%230F172A'/%3e%3c/svg%3e" alt="Image">
+						<img class="amazing__deco" src="data:image/svg+xml,%3csvg%20width='256'%20height='285'%20viewBox='0%200%20256%20285'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20opacity='0.75'%20x='137'%20y='174'%20width='111'%20height='111'%20rx='50'%20fill='%230369A1'/%3e%3crect%20opacity='0.75'%20width='164'%20height='164'%20rx='30'%20fill='%23A21CAF'/%3e%3crect%20opacity='0.75'%20x='71'%20y='45'%20width='185'%20height='185'%20rx='50'%20fill='%23BE185D'/%3e%3c/svg%3e" alt="Image">
+					</div>
+				</section>
+				<section class="more">
+					<div class="more__container">
+						<div class="more__body">
+							<h2 class="more__title">Collect More Sneakers Today</h2>
+							<a href="#" class="more__button button--white">Sign up now</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__top top-footer">
+						<div class="top-footer__nav">
+							<h3 class="top-footer__title">Product</h3>
+							<ul class="top-footer__list">
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Pricing</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Overview</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Browse</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Accessibility</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Five</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-footer__nav">
+							<h3 class="top-footer__title">Solutions</h3>
+							<ul class="top-footer__list">
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Brainstorming</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Ideation</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Wireframing</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Research</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Design</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-footer__nav">
+							<h3 class="top-footer__title">Support</h3>
+							<ul class="top-footer__list">
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Contact Us</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Developers</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Documentation</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Integrations</a>
+								</li>
+								<li class="top-footer__item">
+									<a href="#" class="top-footer__link">Reports</a>
+								</li>
+							</ul>
+						</div>
+						<div data-fls-spollers="" class="spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">Product</summary>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Pricing</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Overview</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Browse</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Accessibility</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Five</a>
+								</div>
+							</details>
+						</div>
+						<div data-fls-spollers="" class="spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">Solutions</summary>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Brainstorming</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Ideation</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Wireframing</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Research</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Design</a>
+								</div>
+							</details>
+						</div>
+						<div data-fls-spollers="" class="spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">Support</summary>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Contact Us</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Developers</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Documentation</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Integrations</a>
+								</div>
+								<div class="spollers__body">
+									<a class="spollers__link" href="#">Reports</a>
+								</div>
+							</details>
+						</div>
+						<div class="footer__links">
+							<div class="footer__markets markets-footer">
+								<h3 class="markets-footer__title">Get the App</h3>
+								<img class="markets-footer__image" src="./assets/img/footer/appstore.svg" alt="Image">
+								<img class="markets-footer__image" src="./assets/img/footer/dplay.svg" alt="Image">
+							</div>
+							<div class="footer__social social-footer">
+								<h3 class="social-footer__title">Follow Us</h3>
+								<ul class="social-footer__list">
+									<li class="social-footer__item">
+										<img src="data:image/svg+xml,%3csvg%20width='20'%20height='14'%20viewBox='0%200%2020%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M15.812%200.0171133H4.145C1.855%200.0171133%200%201.85211%200%204.11611V9.88411C0%2012.1481%201.856%2013.9841%204.145%2013.9841H15.812C18.102%2013.9841%2019.957%2012.1481%2019.957%209.88411V4.11611C19.957%201.85211%2018.101%200.0161133%2015.812%200.0161133V0.0171133ZM13.009%207.28011L7.552%209.85511C7.51872%209.87114%207.48192%209.87848%207.44503%209.87647C7.40815%209.87445%207.37237%209.86313%207.34103%209.84357C7.3097%209.82401%207.28382%209.79684%207.2658%209.76459C7.24779%209.73234%207.23822%209.69605%207.238%209.65911V4.35011C7.23867%204.31299%207.24872%204.27663%207.26722%204.24444C7.28573%204.21224%207.31208%204.18526%207.34382%204.16599C7.37556%204.14673%207.41167%204.13581%207.44877%204.13425C7.48587%204.1327%207.52276%204.14057%207.556%204.15711L13.014%206.89211C13.0504%206.91024%2013.0809%206.93826%2013.102%206.97294C13.1232%207.00762%2013.1341%207.04756%2013.1336%207.08818C13.1331%207.1288%2013.1211%207.16845%2013.0991%207.20258C13.077%207.2367%2013.0458%207.26392%2013.009%207.28111V7.28011Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									</li>
+									<li class="social-footer__item">
+										<img src="data:image/svg+xml,%3csvg%20width='10'%20height='20'%20viewBox='0%200%2010%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.04598%203.865V6.613H0.0319824V9.973H2.04598V19.959H6.17998V9.974H8.95498C8.95498%209.974%209.21498%208.363%209.34098%206.601H6.19698V4.303C6.19698%203.96%206.64698%203.498%207.09298%203.498H9.34698V0H6.28298C1.94298%200%202.04598%203.363%202.04598%203.865Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									</li>
+									<li class="social-footer__item">
+										<img src="data:image/svg+xml,%3csvg%20width='20'%20height='17'%20viewBox='0%200%2020%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%201.90716C19.2504%202.23454%2018.4565%202.4492%2017.644%202.54416C18.4968%202.0434%2019.138%201.24927%2019.448%200.310164C18.64%200.780492%2017.7587%201.11177%2016.841%201.29016C16.4545%200.88537%2015.9897%200.563551%2015.4748%200.344342C14.9598%200.125133%2014.4056%200.0131294%2013.846%200.0151639C11.58%200.0151639%209.743%201.82516%209.743%204.05516C9.743%204.37116%209.779%204.68016%209.849%204.97516C8.22358%204.89786%206.63212%204.48257%205.17617%203.7558C3.72022%203.02903%202.43176%202.00674%201.393%200.754164C1.02883%201.36857%200.837415%202.06994%200.839%202.78416C0.839697%203.45213%201.00683%204.10939%201.32529%204.69656C1.64375%205.28372%202.1035%205.78228%202.663%206.14716C2.01248%206.12616%201.37602%205.95249%200.805%205.64016V5.69016C0.805%207.64816%202.22%209.28116%204.095%209.65316C3.74261%209.74666%203.37958%209.79406%203.015%209.79416C2.75%209.79416%202.493%209.76916%202.242%209.71916C2.51008%2010.5271%203.02311%2011.2315%203.70982%2011.7345C4.39653%2012.2375%205.22284%2012.5142%206.074%2012.5262C4.61407%2013.6507%202.82182%2014.2582%200.979%2014.2532C0.647%2014.2532%200.321%2014.2332%200%2014.1972C1.88125%2015.3879%204.06259%2016.0184%206.289%2016.0152C13.836%2016.0152%2017.962%209.85816%2017.962%204.51916L17.948%203.99616C18.7529%203.42983%2019.4481%202.72201%2020%201.90716Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									</li>
+									<li class="social-footer__item">
+										<img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.017%202H7.947C6.37015%202.00185%204.85844%202.62914%203.74353%203.74424C2.62862%204.85933%202.00159%206.37115%202%207.948L2%2016.018C2.00185%2017.5948%202.62914%2019.1066%203.74424%2020.2215C4.85933%2021.3364%206.37115%2021.9634%207.948%2021.965H16.018C17.5948%2021.9631%2019.1066%2021.3359%2020.2215%2020.2208C21.3364%2019.1057%2021.9634%2017.5938%2021.965%2016.017V7.947C21.9631%206.37015%2021.3359%204.85844%2020.2208%203.74353C19.1057%202.62862%2017.5938%202.00159%2016.017%202V2ZM19.957%2016.017C19.957%2016.5344%2019.8551%2017.0468%2019.6571%2017.5248C19.4591%2018.0028%2019.1689%2018.4371%2018.803%2018.803C18.4371%2019.1689%2018.0028%2019.4591%2017.5248%2019.6571C17.0468%2019.8551%2016.5344%2019.957%2016.017%2019.957H7.947C6.90222%2019.9567%205.90032%2019.5415%205.16165%2018.8026C4.42297%2018.0638%204.008%2017.0618%204.008%2016.017V7.947C4.00827%206.90222%204.42349%205.90032%205.16235%205.16165C5.90122%204.42297%206.90322%204.008%207.948%204.008H16.018C17.0628%204.00827%2018.0647%204.42349%2018.8034%205.16235C19.542%205.90122%2019.957%206.90322%2019.957%207.948V16.018V16.017Z'%20fill='%23E2E8F0'/%3e%3cpath%20d='M11.9819%206.81885C10.6134%206.82096%209.30148%207.36563%208.33385%208.33345C7.36621%209.30127%206.8218%2010.6133%206.81995%2011.9818C6.82153%2013.3508%207.36597%2014.6632%208.33385%2015.6312C9.30172%2016.5993%2010.614%2017.144%2011.9829%2017.1458C13.352%2017.1443%2014.6646%2016.5997%2015.6327%2015.6316C16.6008%2014.6635%2017.1454%2013.3509%2017.1469%2011.9818C17.1448%2010.6129%2016.5999%209.30073%2015.6316%208.33304C14.6634%207.36535%2013.3509%206.82117%2011.9819%206.81985V6.81885ZM11.9819%2015.1378C11.1452%2015.1378%2010.3427%2014.8054%209.75102%2014.2138C9.15935%2013.6221%208.82695%2012.8196%208.82695%2011.9828C8.82695%2011.1461%209.15935%2010.3436%209.75102%209.75193C10.3427%209.16025%2011.1452%208.82785%2011.9819%208.82785C12.8187%208.82785%2013.6212%209.16025%2014.2129%209.75193C14.8045%2010.3436%2015.1369%2011.1461%2015.1369%2011.9828C15.1369%2012.8196%2014.8045%2013.6221%2014.2129%2014.2138C13.6212%2014.8054%2012.8187%2015.1378%2011.9819%2015.1378Z'%20fill='%23E2E8F0'/%3e%3cpath%20d='M17.1559%208.09509C17.8391%208.09509%2018.3929%207.54127%2018.3929%206.85809C18.3929%206.17492%2017.8391%205.62109%2017.1559%205.62109C16.4728%205.62109%2015.9189%206.17492%2015.9189%206.85809C15.9189%207.54127%2016.4728%208.09509%2017.1559%208.09509Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									</li>
+									<li class="social-footer__item">
+										<img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.959%2011.7189V19.0979H15.681V12.2129C15.681%2010.4829%2015.062%209.30288%2013.514%209.30288C12.332%209.30288%2011.628%2010.0989%2011.319%2010.8679C11.206%2011.1429%2011.177%2011.5259%2011.177%2011.9109V19.0979H6.897C6.897%2019.0979%206.955%207.43788%206.897%206.22888H11.177V8.05288L11.149%208.09488H11.177V8.05288C11.745%207.17788%2012.76%205.92688%2015.033%205.92688C17.848%205.92688%2019.959%207.76688%2019.959%2011.7189ZM2.421%200.0258789C0.958%200.0258789%200%200.985879%200%202.24888C0%203.48388%200.93%204.47288%202.365%204.47288H2.393C3.886%204.47288%204.813%203.48388%204.813%202.24888C4.787%200.985879%203.887%200.0258789%202.422%200.0258789H2.421ZM0.254%2019.0979H4.532V6.22888H0.254V19.0979Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__copy">
+							<p>Collers @ 2023. All rights reserved.</p>
+						</div>
+						<ul class="bottom-footer__list">
+							<li class="bottom-footer__item">
+								<a href="#" class="bottom-footer__link">Terms</a>
+							</li>
+							<li class="bottom-footer__item">
+								<a href="#" class="bottom-footer__link">Privacy</a>
+							</li>
+							<li class="bottom-footer__item">
+								<a href="#" class="bottom-footer__link">Contact</a>
+							</li>
+							<li class="bottom-footer__item">
+								<a href="#" class="bottom-footer__link">
+									<img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.252%208C2.08416%208.6534%201.99949%209.32538%202%2010C2%2010.69%202.088%2011.36%202.252%2012H5.1C4.96518%2010.6701%204.96518%209.32993%205.1%208H2.252ZM3.07%206H5.416C5.682%204.783%206.066%203.693%206.537%202.786C5.08518%203.48542%203.87722%204.60523%203.07%206ZM17.748%208H14.9C15.0348%209.32993%2015.0348%2010.6701%2014.9%2012H17.748C18.0847%2010.6879%2018.0847%209.31208%2017.748%208ZM16.93%206C16.1228%204.60523%2014.9148%203.48542%2013.463%202.786C13.935%203.693%2014.318%204.783%2014.584%206H16.93ZM7.112%208C7.03708%208.66403%206.99968%209.33176%207%2010C7%2010.685%207.038%2011.355%207.112%2012H12.888C13.0386%2010.6709%2013.0386%209.32908%2012.888%208H7.112ZM7.47%206H12.53C12.348%205.2483%2012.0855%204.51841%2011.747%203.823C11.119%202.568%2010.447%202%2010%202C9.552%202%208.881%202.568%208.253%203.823C7.938%204.455%207.673%205.19%207.47%206ZM3.07%2014C3.87722%2015.3948%205.08518%2016.5146%206.537%2017.214C6.065%2016.307%205.682%2015.217%205.416%2014H3.07ZM16.93%2014H14.584C14.318%2015.217%2013.934%2016.307%2013.463%2017.214C14.9148%2016.5146%2016.1228%2015.3948%2016.93%2014ZM7.47%2014C7.673%2014.81%207.938%2015.545%208.253%2016.177C8.881%2017.432%209.553%2018%2010%2018C10.448%2018%2011.119%2017.432%2011.747%2016.177C12.062%2015.545%2012.327%2014.81%2012.53%2014H7.47ZM10%2020C4.477%2020%200%2015.523%200%2010C0%204.477%204.477%200%2010%200C15.523%200%2020%204.477%2020%2010C20%2015.523%2015.523%2020%2010%2020Z'%20fill='%23E2E8F0'/%3e%3c/svg%3e" alt="Image">
+									EN
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
